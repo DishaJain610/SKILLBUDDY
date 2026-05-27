@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SkillBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard.html" class="nav-logo">🚀 SkillBuddy</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item"><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="sidebar-item"><a href="courses.html">📘 My Courses</a></li>
+                <li class="sidebar-item"><a href="profile.html">⭐ My Profile</a></li>
+                <li class="sidebar-item"><a href="schedule.html">📅 Schedule</a></li>
+                <li class="sidebar-item active"><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="nav-button-logout">Logout</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h2>Settings</h2>
+                <a href="profile.html" class="user-profile">
+                    <span>Disha Jain</span>
+                    <img src="Disha Jain.jpg" alt="User Avatar">
+                </a>
+            </header>
+            <div class="settings-container">
+                <div class="settings-card card">
+                    <form id="settings-form">
+                        <h4>Notifications</h4>
+                        <div class="setting-item">
+                            <div class="setting-text">
+                                <label for="email-notifications">Email Notifications</label>
+                                 <p>Receive emails about course updates and reminders.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="email-notifications" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-text">
+                                <label for="push-notifications">Push Notifications</label>
+                                <p>Get push notifications on your device.</p>
+                            </div>
+                             <label class="switch">
+                                <input type="checkbox" id="push-notifications">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <h4 class="settings-title">Appearance</h4>
+                        <div class="setting-item">
+                            <div class="setting-text">
+                                <label for="dark-mode">Dark Mode</label>
+                                <p>Reduce eye strain in low-light conditions.</p>
+                            </div>
+                             <label class="switch">
+                                <input type="checkbox" id="dark-mode">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <h4 class="settings-title">Account</h4>
+                         <div class="setting-item account-action">
+                             <div class="setting-text">
+                                <label>Export Data</label>
+                                <p>Download a copy of your learning data.</p>
+                            </div>
+                            <button type="button" class="cta-button secondary">Export</button>
+                         </div>
+                         <div class="setting-item account-action">
+                             <div class="setting-text">
+                                <label>Delete Account</label>
+                                <p>Permanently delete your account and all data.</p>
+                            </div>
+                            <button type="button" class="cta-button danger" id="delete-account-btn">Delete</button>
+                         </div>
+                        <div class="form-actions-footer">
+                            <button type="submit" class="cta-button">Save Preferences</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
