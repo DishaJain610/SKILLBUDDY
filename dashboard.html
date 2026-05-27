@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SkillBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard.html" class="nav-logo">🚀 SkillBuddy</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active"><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="sidebar-item"><a href="courses.html">📘 My Courses</a></li>
+                <li class="sidebar-item"><a href="profile.html">⭐ My Profile</a></li>
+                <li class="sidebar-item"><a href="schedule.html">📅 Schedule</a></li>
+                <li class="sidebar-item"><a href="chatbot.html">🤖 AI Assistant</a></li>
+                <li class="sidebar-item"><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="nav-button-logout">Logout</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h2>Welcome back, <span id="user-name">Disha</span>! 👋</h2>
+                <a href="profile.html" class="user-profile">
+                    <span>Disha Jain</span>
+                    <img src="Disha Jain.jpg" alt="User Avatar">
+                </a>
+            </header>
+            <section class="dashboard-widgets">
+                <div class="widget card">
+                    <h3>Skills in Progress</h3>
+                    <p class="widget-value">4</p>
+                </div>
+                <div class="widget card">
+                    <h3>Courses Completed</h3>
+                    <p class="widget-value">8</p>
+                </div>
+                <div class="widget card">
+                    <h3>Hours Learned</h3>
+                    <p class="widget-value">72</p>
+                </div>
+            </section>
+            <section class="content-section">
+                <h3>My Current Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-progress card">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                     <div class="skill-progress card">
+                        <span>CSS Animations</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                     <div class="skill-progress card">
+                        <span>React Framework</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;">45%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h3>Recommended For You</h3>
+                <div class="recommendations-container">
+                    <div class="card course-card">
+                        <h4>Advanced Node.js</h4>
+                        <p>Deep dive into backend development and build scalable APIs.</p>
+                        <button class="cta-button-small">Start Learning</button>
+                    </div>
+                     <div class="card course-card">
+                        <h4>UI/UX Design Principles</h4>
+                        <p>Learn the fundamentals of creating beautiful and intuitive user interfaces.</p>
+                        <button class="cta-button-small">Start Learning</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
