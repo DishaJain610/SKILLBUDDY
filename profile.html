@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - SkillBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard.html" class="nav-logo">🚀 SkillBuddy</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item"><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="sidebar-item"><a href="courses.html">📘 My Courses</a></li>
+                <li class="sidebar-item active"><a href="profile.html">⭐ My Profile</a></li>
+                <li class="sidebar-item"><a href="schedule.html">📅 Schedule</a></li>
+                <li class="sidebar-item"><a href="chatbot.html">🤖 AI Assistant</a></li>
+                <li class="sidebar-item"><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="nav-button-logout">Logout</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h2>My Profile</h2>
+                <a href="profile.html" class="user-profile">
+                    <span>Disha Jain</span>
+                    <img src="Disha Jain.jpg" alt="User Avatar">
+                </a>
+            </header>
+            <div class="profile-container">
+                <div class="profile-header card">
+                    <img src="Disha Jain.jpg" alt="Disha Jain's Avatar" class="profile-avatar">
+                    <h3>Disha Jain</h3>
+                    <p>disha.jain@example.com</p>
+                    <button class="cta-button-small">Upload Picture</button>
+                </div>
+                <div class="profile-details card">
+                    <form id="profile-form">
+                        <h4>Account Details</h4>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" value="Disha Jain">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" value="disha.jain@example.com" disabled>
+                        </div>
+                         <div class="form-group">
+                            <label for="bio">Your Bio</label>
+                            <textarea id="bio" rows="4">A passionate learner exploring the world of web development and UI/UX design.</textarea>
+                        </div>
+                        <h4 class="settings-title">Account Settings</h4>
+                         <div class="form-group">
+                            <label for="password">New Password</label>
+                            <input type="password" id="password" placeholder="Enter new password">
+                        </div>
+                        <button type="submit" class="cta-button">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
