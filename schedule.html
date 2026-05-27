@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Schedule - SkillBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard.html" class="nav-logo">🚀 SkillBuddy</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item"><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="sidebar-item"><a href="courses.html">📘 My Courses</a></li>
+                <li class="sidebar-item"><a href="profile.html">⭐ My Profile</a></li>
+                <li class="sidebar-item active"><a href="schedule.html">📅 Schedule</a></li>
+                <li class="sidebar-item"><a href="chatbot.html">🤖 AI Assistant</a></li>
+                <li class="sidebar-item"><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="nav-button-logout">Logout</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h2>My Schedule</h2>
+                <a href="profile.html" class="user-profile">
+                    <span>Disha Jain</span>
+                    <img src="Disha Jain.jpg" alt="User Avatar">
+                </a>
+            </header>
+            <div class="schedule-container card">
+                <div class="schedule-header">
+                    <button id="prev-week" class="schedule-nav-btn">&lt; Prev</button>
+                    <h3 id="current-week-display">October 26 - Nov 1, 2025</h3>
+                    <button id="next-week" class="schedule-nav-btn">Next &gt;</button>
+                </div>
+                <div class="schedule-grid">
+                    </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
