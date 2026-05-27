@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses - SkillBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="dashboard.html" class="nav-logo">🚀 SkillBuddy</a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item"><a href="dashboard.html">📊 Dashboard</a></li>
+                <li class="sidebar-item active"><a href="courses.html">📘 My Courses</a></li>
+                <li class="sidebar-item"><a href="profile.html">⭐ My Profile</a></li>
+                <li class="sidebar-item"><a href="schedule.html">📅 Schedule</a></li>
+                <li class="sidebar-item"><a href="chatbot.html">🤖 AI Assistant</a></li>
+                <li class="sidebar-item"><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="nav-button-logout">Logout</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h2>My Courses</h2>
+                <a href="profile.html" class="user-profile">
+                    <span>Disha Jain</span>
+                    <img src="Disha Jain.jpg" alt="User Avatar">
+                </a>
+            </header>
+            <div class="course-filters">
+                <button class="filter-btn active">All (3)</button>
+                <button class="filter-btn">In Progress (2)</button>
+                <button class="filter-btn">Completed (1)</button>
+            </div>
+            <div class="course-grid">
+                <div class="my-course-card card">
+                    <img src="javascript.jpg" alt="JavaScript Course Thumbnail" class="course-thumbnail">
+                    <div class="course-card-content">
+                        <h4>Advanced JavaScript</h4>
+                        <p>Master closures, async/await, and modern ES6+ features.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;">75%</div>
+                        </div>
+                        <a href="#" class="cta-button-small">Continue Learning</a>
+                    </div>
+                </div>
+                <div class="my-course-card card">
+                    <img src="CSS.jpg" alt="" class="course-thumbnail">
+                    <div class="course-card-content">
+                        <h4>CSS Animations</h4>
+                        <p>Bring your websites to life with stunning transitions and keyframes.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;">100%</div>
+                        </div>
+                        <a href="#" class="cta-button-small">View Certificate</a>
+                    </div>
+                </div>
+                <div class="my-course-card card">
+                     <img src="react.jpg" alt="React Course Thumbnail" class="course-thumbnail">
+                    <div class="course-card-content">
+                        <h4>React Framework</h4>
+                        <p>Build powerful, scalable single-page applications with React.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;">45%</div>
+                        </div>
+                        <a href="#" class="cta-button-small">Continue Learning</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
